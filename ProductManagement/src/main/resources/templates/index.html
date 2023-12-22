@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Insert title here</title>
+</head>
+<body>
+<p>
+  <span th:text="${title}">Hello World!</span>
+</p>
+<table>
+  <tr th:each="data : ${stuffDataList}" th:object="${data}">
+    <td th:text="*{staff_id}"></td>
+    <td th:text="*{STAFF_NAME}"></td>
+    <td th:text="*{STAFF_PASS}"></td>
+    <td th:text="*{STAFF_ADMN}"></td>
+  </tr>
+</table>
+</body>
+</html>
